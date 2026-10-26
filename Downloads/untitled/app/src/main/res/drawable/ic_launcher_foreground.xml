@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Medical Shield -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M54,26 C41,26 34,31 34,31 C34,51 42,70 54,82 C66,70 74,51 74,31 C74,31 67,26 54,26 Z" />
+    <!-- Hospital Cross cutout / inner icon in medical teal -->
+    <path
+        android:fillColor="#0f766e"
+        android:pathData="M51,39 L57,39 L57,48 L66,48 L66,54 L57,54 L57,63 L51,63 L51,54 L42,54 L42,48 L51,48 Z" />
+</vector>
