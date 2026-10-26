@@ -28,12 +28,19 @@ interface SidebarProps {
   alertCount: number;
 }
 
+interface MenuItem {
+  id: NavigationTab;
+  label: string;
+  icon: React.FC<{ className?: string; size?: number }>;
+  badge?: number;
+}
+
 export const Sidebar: React.FC<SidebarProps> = ({
   activeTab,
   onSelectTab,
   alertCount,
 }) => {
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     { id: 'dashboard', label: 'Dashboard', icon: IconDashboard },
     { id: 'staff', label: 'Staff', icon: IconStaff },
     { id: 'beds', label: 'Beds & Zones', icon: IconBed },
@@ -43,7 +50,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'technique', label: 'Technique Station', icon: IconCamera },
     { id: 'devices', label: 'Device Health', icon: IconDevice },
     { id: 'settings', label: 'Settings', icon: IconSettings },
-  ] as const;
+  ];
 
   return (
     <aside className="sidebar-container">

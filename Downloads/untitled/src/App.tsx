@@ -29,7 +29,9 @@ export const App: React.FC = () => {
     const unsubscribe = hospitalStore.subscribe(() => {
       setTick((t) => t + 1);
     });
-    return () => unsubscribe();
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   const beds = hospitalStore.getBeds();
